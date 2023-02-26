@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
-import logo from '../../assets/images/eco-logo.png'
-import userIcon from '../../assets/images/user-icon.png'
+import logo from '../../../assets/images/eco-logo.png'
+import userIcon from '../../../assets/images/user-icon.png'
 import { motion } from "framer-motion";
 
 
