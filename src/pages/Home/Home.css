@@ -50,3 +50,41 @@
     }
 }
 /* end hero_section */
+
+
+
+/* start services_section */
+.services_section {
+    margin: 50px 0;
+}
+.service_item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 30px;
+}
+.service_item .i {
+    font-size: 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.service_item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.service_item p {
+    line-height: 15px;
+    margin-top: 5px !important;
+}
+/* resposeve media queries */
+@media (max-width:991px) {
+    .col_service {
+        margin: 20px 0;
+    }
+}
+/* end services_section */
