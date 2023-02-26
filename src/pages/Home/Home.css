@@ -1,0 +1,50 @@
+.hero {
+    background-color: var(--card-bg-02);
+    padding: 15px 0;
+}
+.hero_content {
+    padding: 45px 0;
+}
+.hero_content h2 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin: 20px 0 !important;
+}
+.hero_content p {
+    color: var(--primary-color);
+}
+.hero_content .hero_subtitle {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.hero_content .buy_btn {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    margin-top: 40px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.hero_content .buy_btn:hover {
+    box-shadow: none !important;
+}
+.hero_content .buy_btn a {
+    color: var(--card-bg-01);
+}
+.hero_img {
+    width: 100%;
+    height: 100%;
+}
+.hero_img img {
+    width: 100%;
+    height: 100%;
+}
+/* resposeve media queries */
+@media (max-width:767px) {
+    .hero_img img {
+        width: 90%;
+        height: 90%;
+    }
+}
