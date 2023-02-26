@@ -1,3 +1,4 @@
+/* start hero_section */
 .hero {
     background-color: var(--card-bg-02);
     padding: 15px 0;
@@ -48,3 +49,4 @@
         height: 90%;
     }
 }
+/* end hero_section */
