@@ -10,7 +10,7 @@ const TimeCount = () => {
         <div className='TimeCount_section'>
             <Container>
                 <Row>
-                    <Col md='6'>
+                    <Col md='6' sm='6' xs='12' className='TimeCount_col'>
                         <div className='clockTop_content'>
                             <h4>limited offers</h4>
                             <h3>quality armchair</h3>
@@ -20,7 +20,7 @@ const TimeCount = () => {
                             <Link to='/shop'>visit store</Link>
                         </motion.button>
                     </Col>
-                    <Col md='6' className='text-end'>
+                    <Col md='6' sm='6' xs='12' className='TimeCount_col2'>
                         <img src={counterImg} alt='' />
                     </Col>
                 </Row>
