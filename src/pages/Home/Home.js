@@ -7,6 +7,7 @@ import TrendingProducts from './../../components/Home/TrendingProducts';
 import BestSales from './../../components/Home/BestSales';
 import TimeCount from './../../components/timerCount/TimeCount';
 import NewArrivals from './../../components/Home/NewArrivals';
+import Popular from './../../components/Home/Popular';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <BestSales/>
             <TimeCount/>
             <NewArrivals/>
+            <Popular/>
         </Head>
     )
 }
