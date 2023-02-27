@@ -4,6 +4,7 @@ import Head from '../../components/HeadTitle/Head';
 import HeroSection from '../../components/Home/HeroSection';
 import Services from './../../components/Services/Services';
 import TrendingProducts from './../../components/Home/TrendingProducts';
+import BestSales from './../../components/Home/BestSales';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <HeroSection/>
             <Services/>
             <TrendingProducts/>
+            <BestSales/>
         </Head>
     )
 }
