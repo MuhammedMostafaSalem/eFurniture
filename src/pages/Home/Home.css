@@ -197,3 +197,13 @@
     margin-bottom: 100px;
 }
 /* end NewArrivals_section */
+
+
+/* start Popular_section */
+.Popular_section {
+    margin-bottom: 100px;
+}
+.Popular_section .subTitlePopular {
+    margin-bottom: 40px;
+}
+/* end Popular_section */
