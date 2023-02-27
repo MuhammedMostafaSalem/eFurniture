@@ -6,6 +6,7 @@ import Services from './../../components/Services/Services';
 import TrendingProducts from './../../components/Home/TrendingProducts';
 import BestSales from './../../components/Home/BestSales';
 import TimeCount from './../../components/timerCount/TimeCount';
+import NewArrivals from './../../components/Home/NewArrivals';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <TrendingProducts/>
             <BestSales/>
             <TimeCount/>
+            <NewArrivals/>
         </Head>
     )
 }
