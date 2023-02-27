@@ -18,7 +18,7 @@
     font-weight: 600;
     text-transform: capitalize;
 }
-.hero_content .buy_btn {
+.buy_btn {
     border: none;
     outline: none;
     background-color: var(--primary-color);
@@ -28,10 +28,7 @@
     border-radius: 20px;
     font-size: 14px;
 }
-.hero_content .buy_btn:hover {
-    box-shadow: none !important;
-}
-.hero_content .buy_btn a {
+.buy_btn a {
     color: var(--card-bg-01);
 }
 .hero_img {
@@ -102,3 +99,62 @@
     margin: 100px 0;
 }
 /* end bestSales_section */
+
+
+/* start TimeCount_section */
+.TimeCount_section {
+    background-color: var(--primary-color);
+    margin: 100px 0;
+    height: 300px;
+    padding: 50px 0;
+}
+.TimeCount_section img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+.clockTop_content {
+    color: var(--card-bg-02);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.clockTop_content h4 {
+    font-size: 18px;
+}
+.clockTop_content h3 {
+    font-size: 23px;
+}
+.TimeCount_section .buy_btn {
+    background-color: var(--card-bg-02);
+}
+.TimeCount_section .buy_btn a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.clock_wrapper {
+    margin-top: 20px;
+}
+.clock_data {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.clock_data h1,
+.clock_data h5,
+.clock_data span {
+    color: var(--card-bg-02);
+    text-align: center;
+}
+.clock_data h1 {
+    font-size: 35px;
+}
+.clock_data h5 {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.clock_data span {
+    font-size: 20px;
+}
+/* end TimeCount_section */
