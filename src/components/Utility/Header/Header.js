@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Header.css'
 import { Container } from 'react-bootstrap'
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import logo from '../../../assets/images/eco-logo.png'
 import userIcon from '../../../assets/images/user-icon.png'
@@ -26,8 +26,34 @@ const nav_links = [
 ]
 
 const Header = () => {
+    
+    // toggle icon bar
+    const iconRef = useRef(null)
+    const iconToggle = () => iconRef.current.classList.toggle('fa-times')
+
+    // toggle menu
+    const menuRef = useRef(null)
+    const menuToggle = () => menuRef.current.classList.toggle('active_menu')
+
+    // select window scroll in navbar
+    const headerRef = useRef(null)
+    const stickyHeader = () => {
+        window.addEventListener('scroll', ()=> {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerRef.current.classList.add('sticky_header')
+            }
+            else {
+                headerRef.current.classList.remove('sticky_header')
+            }
+        })
+    }
+    useEffect(()=> {
+        stickyHeader()
+        return ()=> window.removeEventListener('scroll', stickyHeader)
+    })
+
     return (
-        <header className='header'>
+        <header className='header' ref={headerRef}>
             <Container>
                 <div className='nav_wrapper'>
                     <NavLink to="/">
@@ -38,7 +64,7 @@ const Header = () => {
                     </NavLink>
 
                     <div className='navigation'>
-                        <ul className='menu'>
+                        <ul className='menu' ref={menuRef} onClick={menuToggle}>
                             {
                                 nav_links.map((item, index) => {
                                     return (
@@ -68,12 +94,11 @@ const Header = () => {
                         <span className='cart_icon'>
                             <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt='userIcon' />
                         </span>
-                    </div>
-
-                    <div className='mobile_bar'>
-                        <span>
-                            <FontAwesomeIcon icon={faBars} className='i' />
-                        </span>
+                        <div className='mobile_bar'>
+                            <span onClick={menuToggle}>
+                                <i className="fa-solid fa-bars i" ref={iconRef} onClick={iconToggle}></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </Container>
