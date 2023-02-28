@@ -4,20 +4,21 @@ footer {
     color: var(--card-bg-01);
     text-transform: capitalize;
 }
-.logo {
+footer .logo {
     gap: 10px;
 }
-.logo h1 {
+footer .logo h1 {
     text-transform: none;
     color: var(--card-bg-01);
 }
-.logo .i {
+footer .logo .i {
     font-size: 30px;
+    color: var(--card-bg-01);
 }
 .footer_text {
     margin-top: 20px !important;
 }
-p, a, .i {
+.footer_text, .foote_quick_links a, .foote_quick_links .i {
     color: var(--card-bg-01) !important;
 }
 .list-group {
