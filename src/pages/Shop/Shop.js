@@ -5,7 +5,9 @@ import HeroShop from '../../components/Shop/HeroShop';
 
 const Shop = () => {
     return (
-        <Head title={'(shop)'}></Head>
+        <Head title={'(shop)'}>
+            <HeroShop/>
+        </Head>
     )
 }
 
