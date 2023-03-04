@@ -8,6 +8,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import logo from '../../../assets/images/eco-logo.png'
 import userIcon from '../../../assets/images/user-icon.png'
 import { motion } from "framer-motion";
+import { useSelector } from 'react-redux';
 
 
 const nav_links = [
@@ -52,6 +53,9 @@ const Header = () => {
         return ()=> window.removeEventListener('scroll', stickyHeader)
     })
 
+    // show total quantity in nav_icons => cart_icon
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity)
+
     return (
         <header className='header' ref={headerRef}>
             <Container>
@@ -89,7 +93,11 @@ const Header = () => {
                         </span>
                         <span className='cart_icon'>
                             <FontAwesomeIcon icon={faBagShopping} className='i' />
-                            <span className='badge'>1</span>
+                            {
+                                totalQuantity ? (
+                                    <span className='badge'>{totalQuantity}</span>
+                                ) : <span className='badge'></span>
+                            }
                         </span>
                         <span className='cart_icon'>
                             <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt='userIcon' />
