@@ -6,7 +6,23 @@ import { Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import {  useDispatch } from 'react-redux';
+import { addItem } from '../../../redux/slices/cartSlice'
+
 const ProductCard = ({item}) => {
+
+    const dispatch = useDispatch();
+
+    const addToCart = () => {
+        dispatch(addItem({
+            id: item.id,
+            productName: item.productName,
+            price: item.price,
+            image: item.imgUrl,
+        }))
+    }
+
+
     return (
         <Col lg='3' md='6' sm='6'>
             <div className='product_item'>
@@ -21,7 +37,7 @@ const ProductCard = ({item}) => {
                 </div>
                 <div className='productCard_bottom'>
                     <span className='price'>${item.price}</span>
-                    <motion.span whileTap={{scale: 1.1}}>
+                    <motion.span whileTap={{scale: 1.1}} onClick={() => addToCart()}>
                         <FontAwesomeIcon icon={faCirclePlus} className='i' />
                     </motion.span>
                 </div>
