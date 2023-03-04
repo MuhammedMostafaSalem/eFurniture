@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 import {  useDispatch } from 'react-redux';
 import { addItem } from '../../../redux/slices/cartSlice'
 
+import { toast } from 'react-toastify';
+
 const ProductCard = ({item}) => {
 
     const dispatch = useDispatch();
@@ -20,6 +22,8 @@ const ProductCard = ({item}) => {
             price: item.price,
             image: item.imgUrl,
         }))
+
+        toast.success('Product added successfully');
     }
 
 
