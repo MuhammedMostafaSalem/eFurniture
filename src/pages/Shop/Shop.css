@@ -1,0 +1,23 @@
+/* start heroShop_section */
+.heroShop_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.heroShop_section img {
+    width: 100%;
+    height: 55vh;
+}
+.heroShop_section .subTitle {
+    position: absolute;
+    text-transform: capitalize;
+    color: var(--card-bg-02) !important;
+}
+/* resposeve media queries */
+@media (max-width: 400px) {
+    .heroShop_section .subTitle {
+        font-size: 20px;
+    }
+}
+/* end heroShop_section */
