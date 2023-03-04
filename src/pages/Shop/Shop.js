@@ -1,9 +1,11 @@
 import React from 'react';
 import './Shop.css';
+import Head from './../../components/HeadTitle/Head';
+import HeroShop from '../../components/Shop/HeroShop';
 
 const Shop = () => {
     return (
-        <div>Shop</div>
+        <Head title={'(shop)'}></Head>
     )
 }
 
