@@ -21,3 +21,48 @@
     }
 }
 /* end heroShop_section */
+
+
+/* start FilterSearch_section */
+.FilterSearch_section {
+    margin-bottom: 100px;
+}
+
+.FilterSearch_section .filter_widget select {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--card-bg-02);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.FilterSearch_section .filter_widget select:focus {
+    outline: none !important;
+}
+.FilterSearch_section .search_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.FilterSearch_section .search_box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.FilterSearch_section .search_box span {
+    color: var(--primary-color);
+}
+/* end FilterSearch_section */
+
+
+/* start ProductCardShop_section */
+.ProductCardShop_section {
+    margin-bottom: 50px;
+}
+/* end ProductCardShop_section */
