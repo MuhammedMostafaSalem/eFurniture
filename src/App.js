@@ -3,6 +3,7 @@ import Header from "./components/Utility/Header/Header";
 import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import Footer from './components/Utility/Footer/Footer';
+import ProductsDetailsPage from './pages/productDetails/ProductsDetailsPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home/>}/>
         <Route path='shop' element={<Shop/>}/>
+        <Route path='shop/:id' element={<ProductsDetailsPage/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
