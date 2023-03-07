@@ -1,0 +1,95 @@
+.ProductsDetailsPage img {
+    width: 80%;
+    height: 100%;
+}
+.ProductText_section {
+    margin-top: 30px;
+}
+.ProductText_section .d-flex {
+    align-items: center;
+}
+.product_rating p span {
+    color: orange;
+    font-weight: 600;
+}
+.ProductText_section .product_price {
+    font-size: 20px;
+}
+.ProductText_section .product_rating {
+    text-transform: capitalize;
+}
+.ProductText_section .product_price,
+.ProductText_section .product_rating {
+    font-weight: 600;
+}
+.buy_btn {
+    color: var(--card-bg-01);
+}
+.tapWrapper_section {
+    margin: 10px 0 50px;
+}
+.tapWrapper_section .tapWrapper {
+    text-transform: capitalize;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.tapWrapper_section .tapWrapper p {
+    font-size: 17px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.tapWrapper_section .tab_content {
+    margin-top: 10px;
+}
+.review_form {
+    width: 80%;
+    margin: 30px auto;
+}
+.review_form form,
+.review_form form .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.review_form h4 {
+    margin-bottom: 20px !important;
+}
+.review_form form .form_group div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.review_form form .form_group div span {
+    font-size: 20px;
+    color: #ffc107;
+    display: flex;
+    gap: 10px;
+}
+.review_form form .form_group div span p {
+    color: #ffc107;
+}
+.review_form form .form_group input,
+.review_form form .form_group textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    padding: 5px 15px;
+}
+.review_form form .form_group textarea {
+    padding: 10px 15px;
+}
+.active_tab {
+    font-weight: 700;
+}
+
+
+
+
+.related_section {
+    margin-bottom: 50px;
+}
+.related_section h4 {
+    text-align: center;
+    color: var(--primary-color);
+}
