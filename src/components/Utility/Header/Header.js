@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Header.css'
 import { Container } from 'react-bootstrap'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
@@ -56,6 +56,13 @@ const Header = () => {
     // show total quantity in nav_icons => cart_icon
     const totalQuantity = useSelector((state) => state.cart.totalQuantity)
 
+    // to enter the shopping cart page
+    const navegate = useNavigate()
+    const navegateToCart = () => {
+        navegate('/cart')
+    }
+
+
     return (
         <header className='header' ref={headerRef}>
             <Container>
@@ -91,7 +98,7 @@ const Header = () => {
                             <FontAwesomeIcon icon={faHeart} className='i' />
                             <span className='badge'>1</span>
                         </span>
-                        <span className='cart_icon'>
+                        <span className='cart_icon' onClick={navegateToCart}>
                             <FontAwesomeIcon icon={faBagShopping} className='i' />
                             {
                                 totalQuantity ? (
