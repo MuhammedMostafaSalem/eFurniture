@@ -1,0 +1,55 @@
+.checkoutPege {
+    margin: 50px 0;
+}
+/* start billInfo_section */
+.billInfo_section h4 {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin-bottom: 10px !important;
+}
+.billInfo_section input {
+    width: 100%;
+    border: none;
+}
+.billInfo_section input:focus {
+    outline: none;
+}
+.billInfo_section .form_group {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.billInfo_section .form_group:not(:last-child) {
+    margin-bottom: 10px !important;
+}
+/* end billInfo_section */
+
+
+/* start checkoutCart_section */
+.checkout_cart {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--card-bg-02);
+}
+.checkout_cart h6,
+.checkout_cart h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.checkout_cart h6 {
+    margin-bottom: 10px !important;
+}
+.checkout_cart h4 {
+    border-top: 1px solid #dddddd41;
+    padding-top: 15px !important;
+}
+.checkout_cart .auth_btn {
+    background-color: var(--card-bg-02);
+    color: var(--primary-color);
+    width: 100%;
+    font-weight: 600;
+}
+/* end checkoutCart_section */
