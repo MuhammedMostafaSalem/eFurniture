@@ -1,0 +1,48 @@
+/* start login_section */
+.login_section {
+    margin: 50px 0;
+    padding: 20px 100px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+.login_section h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px !important;
+    color: var(--card-bg-02);
+    font-size: 30px;
+}
+.login_section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login_section form .form_group {
+    width: 100%;
+    background-color: var(--card-bg-02);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.login_section form .form_group input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.login_section form .form_group input:focus {
+    outline: none;
+}
+.login_section form .auth_btn {
+    background-color: var(--card-bg-02);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.form_img {
+    background-color: transparent !important;
+    border-radius: 0;
+    padding: 0 !important;
+}
+.form_img input {
+    color: var(--card-bg-02);
+    font-weight: 600;
+    cursor: pointer !important;
+}
+/* end login_section */
