@@ -6,6 +6,8 @@ import Footer from './components/Utility/Footer/Footer';
 import ProductsDetailsPage from './pages/productDetails/ProductsDetailsPage';
 import CartPage from "./pages/Cart/CartPage";
 import CheckOutPage from "./pages/CheckOut/CheckOutPage";
+import Login from "./pages/Auth/LoginPage";
+import Signup from "./pages/Auth/SignupPage";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='shop/:id' element={<ProductsDetailsPage/>}/>
         <Route path='cart' element={<CartPage/>}/>
         <Route path='checkout' element={<CheckOutPage/>}/>
+        <Route path='login' element={<Login/>}/>
+        <Route path='signup' element={<Signup/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
