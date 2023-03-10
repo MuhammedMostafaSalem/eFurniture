@@ -4,7 +4,6 @@ import { Container } from 'react-bootstrap'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import logo from '../../../assets/images/eco-logo.png'
 import userIcon from '../../../assets/images/user-icon.png'
 import { motion } from "framer-motion";
@@ -23,10 +22,6 @@ const nav_links = [
     {
         path: 'shop',
         display: 'Shop',
-    },
-    {
-        path: 'cart',
-        display: 'Cart',
     },
 ]
 
@@ -113,10 +108,6 @@ const Header = () => {
                     </div>
 
                     <div className='nav_icons'>
-                        <span className='fav_icon'>
-                            <FontAwesomeIcon icon={faHeart} className='i' />
-                            <span className='badge'>1</span>
-                        </span>
                         <span className='cart_icon' onClick={navegateToCart}>
                             <FontAwesomeIcon icon={faBagShopping} className='i' />
                             {

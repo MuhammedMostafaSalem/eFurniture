@@ -31,6 +31,9 @@
 .buy_btn a {
     color: var(--card-bg-01);
 }
+.buy_btn a:hover {
+    color: var(--card-bg-01);
+}
 .hero_img {
     width: 100%;
     height: 100%;

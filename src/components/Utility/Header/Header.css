@@ -55,7 +55,6 @@
     display: none;
     z-index: 1000;
 }
-.fav_icon,
 .cart_icon {
     position: relative;
 }

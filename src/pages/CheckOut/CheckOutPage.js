@@ -3,7 +3,7 @@ import './CheckOutPage.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import BillInfo from '../../components/Checkout/BillInfo';
 import Head from './../../components/HeadTitle/Head';
-import Checkout_cart from '../../components/Checkout/Checkout_cart';
+import CheckoutCart from '../../components/Checkout/CheckoutCart';
 
 const CheckOutPage = () => {
     return (
@@ -15,7 +15,7 @@ const CheckOutPage = () => {
                             <BillInfo/>
                         </Col>
                         <Col lg='4'>
-                            <Checkout_cart/>
+                            <CheckoutCart/>
                         </Col>
                     </Row>
                 </Container>

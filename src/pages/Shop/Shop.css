@@ -58,6 +58,13 @@
 .FilterSearch_section .search_box span {
     color: var(--primary-color);
 }
+
+/* resposeve media queries */
+@media (max-width:767px) {
+    .FilterSearch_section .filter_widget {
+        margin-bottom: 10px;
+    }
+}
 /* end FilterSearch_section */
 
 

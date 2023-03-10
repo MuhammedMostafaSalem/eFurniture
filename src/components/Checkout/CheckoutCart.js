@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 
-const Checkout_cart = () => {
+const CheckoutCart = () => {
 
     const totalQty = useSelector(state => state.cart.totalQuantity);
     const totalAmount = useSelector(state => state.cart.totalAmount);
@@ -27,4 +27,4 @@ const Checkout_cart = () => {
     )
 }
 
-export default Checkout_cart
+export default CheckoutCart

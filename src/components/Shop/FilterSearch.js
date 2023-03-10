@@ -55,7 +55,7 @@ const FilterSearch = () => {
             <div className='FilterSearch_section'>
                 <Container>
                     <Row>
-                        <Col md='3' sm='3'>
+                        <Col md='4' sm='3'>
                             <div className='filter_widget'>
                                 <select onChange={handleFilter}>
                                     <option value='allCategory'>filter by category</option>
@@ -67,16 +67,7 @@ const FilterSearch = () => {
                                 </select>
                             </div>
                         </Col>
-                        <Col md='3' sm='3'>
-                            <div className='filter_widget'>
-                                <select>
-                                    <option>sort by</option>
-                                    <option value='ascending'>ascending</option>
-                                    <option value='descending'>descending</option>
-                                </select>
-                            </div>
-                        </Col>
-                        <Col md='6' sm='12'>
+                        <Col md='8' sm='12'>
                             <div className='search_box'>
                                 <input type='text' placeholder='Search By Category' onChange={handleSearch} />
                                 <span>
